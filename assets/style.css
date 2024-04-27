@@ -1,0 +1,47 @@
+#email {
+    color: black; /* Set font color to black */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the link inline with other elements */
+    vertical-align: middle; /* Align vertically with logo */
+    margin-left: 100px; /* Adjust spacing from logo */
+    margin-bottom: 100px;
+    inline-size: none;
+    
+}
+
+
+
+
+/* Style for the buttons */
+#buttons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#buttons li {
+    float: left;
+}
+
+#buttons li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #9af4fb;
+    border-right: 1px solid #f9f8f8a4;
+}
+
+#buttons li:last-child a {
+    border-right: none;
+}
+
+/* Hover effect */
+#buttons li a:hover {
+    background-color: #54d4f0e9;
+    
+}
+
+
+  
