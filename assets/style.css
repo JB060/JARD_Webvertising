@@ -3,6 +3,16 @@ background-color: rgb(255, 255, 255);
 
 }
 
+#email {
+        
+    font-family: sans-serif;
+    margin-left: 45%;
+    text-decoration: none; 
+    color: rgb(50, 195, 221);
+    font-size: 20px;
+    width: 200px;
+}
+
 
 #call-to-action {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -31,21 +41,19 @@ background-color: rgb(255, 255, 255);
     padding: 0 20px; /* Add padding for space around navbar contents */
 }
 
-
-#email {
-        
-        font-family: sans-serif;
-        margin-left: 45%;
-        text-decoration: none; 
-        color: rgb(50, 195, 221);
-        font-size: 20px;
-        width: 200px;
-}
-
-
 #navbar {
     text-align: center;
-    margin: 50px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+#navbar:hover {
+    opacity: 0.7; /* Reduce opacity to 70% on hover */
+}
+
+#navbar.clicked {
+    opacity: 1.5; /* Increase opacity to 150% when clicked */
+}
 }
 
 #buttons {
@@ -70,6 +78,20 @@ background-color: rgb(255, 255, 255);
     border-radius: 5px; /* Rounded corners */
 }
 
+#hero-image {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflow of the image */
+}
+
+#hero-image img {
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: 100%; /* Ensure the image takes full height of its container */
+    object-fit: cover; /* Scale the image while preserving its aspect ratio */
+}
 
 #footer-info {
    font-family: sans-serif;
