@@ -4,6 +4,23 @@ background-color: rgb(255, 255, 255);
 }
 
 
+#call-to-action {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(50, 195, 221);
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 20px 50px; /* Adjust padding for button size */
+    color: white;
+}
+
+
 .navbar-container {
     display: flex;
     align-items: center; /* Center items vertically */
@@ -15,27 +32,20 @@ background-color: rgb(255, 255, 255);
 }
 
 
-    #email {
-        text-decoration: none; 
-        color: black;
+#email {
+        
         font-family: sans-serif;
+        margin-left: 45%;
+        text-decoration: none; 
+        color: rgb(50, 195, 221);
         font-size: 20px;
         width: 200px;
 }
 
-#call-to-action{
-    background-color: rgb(33, 190, 218);
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px; /* Adjust padding for button size */
-    color: white;
-}
-
-
 
 #navbar {
     text-align: center;
-    margin: 20px;
+    margin: 50px;
 }
 
 #buttons {
@@ -50,11 +60,23 @@ background-color: rgb(255, 255, 255);
 }
 
 #buttons li a {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif ;
+    background-color: rgb(50, 195, 221);
     text-decoration: none; /* Remove underline from links */
-    color: black; /* Set link color */
+    color: rgb(255, 255, 255); /* Set link color */
     padding: 8px 16px; /* Add padding to each link */
     border: 1px solid black; /* Add border for visual separation */
     border-radius: 5px; /* Rounded corners */
+}
+
+
+#footer-info {
+   font-family: sans-serif;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+  height: 100vh;
 }
 
 @media screen and (max-width: 600px) {
