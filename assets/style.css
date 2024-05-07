@@ -1,6 +1,6 @@
-header{
-background-color: rgb(255, 255, 255);
-
+header {
+    background-color: rgb(255, 255, 255);
+    
 }
 
 
@@ -9,15 +9,16 @@ background-color: rgb(255, 255, 255);
 }
 
 #email {
-    position:absolute;
+    position: absolute;
     top: 20px; /* Adjust this value as needed */
-    left: 50%; /* Position horizontally at 50% of the viewport */
-    transform: translateX(-50%); /* Center the div horizontally */
+    left: 50%; /* Position horizontally at 50% of the viewport width */
+    transform: translateX(-50%); /* Center the div horizontally relative to its own width */
     font-family: sans-serif;
     text-decoration: none;
     color: rgb(43, 193, 219);
     font-size: 20px;
     width: 200px;
+    text-align: center; /* Center the text inside the div */
 }
 
 
@@ -52,7 +53,7 @@ background-color: rgb(255, 255, 255);
 #navbar {
     text-align: center;
     cursor: pointer; /* Change cursor to pointer on hover */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+    transition: opacity 0.1s ease; /* Smooth transition for opacity change */
 }
 
 #navbar:hover {
@@ -60,7 +61,7 @@ background-color: rgb(255, 255, 255);
 }
 
 #navbar.clicked {
-    opacity: 1.5; /* Increase opacity to 150% when clicked */
+    opacity: 2.5; /* Increase opacity to 150% when clicked */
 }
 }
 
@@ -74,6 +75,7 @@ background-color: rgb(255, 255, 255);
 #buttons li {
     display: inline-block; /* Display list items in a row */
     margin-right: 10px; /* Add spacing between items */
+    margin-bottom: 30px ;
 }
 
 #buttons li a {
@@ -89,12 +91,16 @@ background-color: rgb(255, 255, 255);
 }
 
 #hero-image {
+    
+    margin-bottom: 10px;
     width: 100vw; /* Full width of the viewport */
     height: 100vh; /* Full height of the viewport */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden; /* Hide any overflow of the image */
+    border-bottom: 50px solid rgb(50, 195, 221); /* Add a 15px solid black border at the bottom */
+    border-top: 50px solid rgb(50, 195, 221); /* Add a 15px solid black border at the top */ ;
 }
 
 #hero-image img {
