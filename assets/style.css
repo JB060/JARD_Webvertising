@@ -1,18 +1,21 @@
 header {
     background-color: rgb(255, 255, 255);
-    
+
 }
 
 
 /* Style for the logo container */
 #jard-logo {
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px;
+    /* Adjust padding as needed */
 }
 
 /* Style for the logo image */
 #jard-logo img {
-    width: 320px; /* Adjust the width of the logo image */
-    height: auto; /* Maintain aspect ratio */
+    width: 320px;
+    /* Adjust the width of the logo image */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 /* Change cursor to pointer on hover */
@@ -22,15 +25,19 @@ header {
 
 #email {
     position: absolute;
-    top: 20px; /* Adjust this value as needed */
-    left: 50%; /* Position horizontally at 50% of the viewport width */
-    transform: translateX(-50%); /* Center the div horizontally relative to its own width */
+    top: 20px;
+    /* Adjust this value as needed */
+    left: 50%;
+    /* Position horizontally at 50% of the viewport width */
+    transform: translateX(-50%);
+    /* Center the div horizontally relative to its own width */
     font-family: sans-serif;
     text-decoration: none;
     color: rgb(43, 193, 219);
     font-size: 20px;
     width: 200px;
-    text-align: center; /* Center the text inside the div */
+    text-align: center;
+    /* Center the text inside the div */
 }
 
 
@@ -47,86 +54,134 @@ header {
     background-color: rgb(50, 195, 221);
     border: solid 2px;
     border-radius: 20px;
-    padding: 20px 50px; /* Adjust padding for button size */
+    padding: 20px 50px;
+    /* Adjust padding for button size */
     color: white;
 }
 
 
 .navbar-container {
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space items apart, pushing button to the right */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: space-between;
+    /* Space items apart, pushing button to the right */
     background-color: rgb(255, 255, 255);
     height: 30px;
-    width: 100%; /* Assuming full width */
-    padding: 0 20px; /* Add padding for space around navbar contents */
+    width: 100%;
+    /* Assuming full width */
+    padding: 0 20px;
+    /* Add padding for space around navbar contents */
 }
 
 #navbar {
     text-align: center;
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: opacity 0.1s ease; /* Smooth transition for opacity change */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    transition: opacity 0.1s ease;
+    /* Smooth transition for opacity change */
 }
 
 #navbar:hover {
-    opacity: 0.7; /* Reduce opacity to 70% on hover */
+    opacity: 0.7;
+    /* Reduce opacity to 70% on hover */
 }
 
 #navbar.clicked {
-    opacity: 2.5; /* Increase opacity to 150% when clicked */
+    opacity: 2.5;
+    /* Increase opacity to 150% when clicked */
 }
 }
 
 #buttons {
-   
+
     margin-right: 0%;
-    list-style-type: none; 
-    padding:0% 
+    list-style-type: none;
+    padding: 0%
 }
 
 #buttons li {
-    display: inline-block; /* Display list items in a row */
-    margin-right: 10px; /* Add spacing between items */
-    margin-bottom: 30px ;
+    display: inline-block;
+    /* Display list items in a row */
+    margin-right: 10px;
+    /* Add spacing between items */
+    margin-bottom: 30px;
 }
 
 #buttons li a {
- 
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    font-family: sans-serif ;
+    font-family: sans-serif;
     background-color: rgb(50, 195, 221);
-    text-decoration: none; /* Remove underline from links */
-    color: rgb(255, 255, 255); /* Set link color */
-    padding: 8px 16px; /* Add padding to each link */
-    border: 1px solid black; /* Add border for visual separation */
-    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;
+    /* Remove underline from links */
+    color: rgb(255, 255, 255);
+    /* Set link color */
+    padding: 8px 16px;
+    /* Add padding to each link */
+    border: 1px solid black;
+    /* Add border for visual separation */
+    border-radius: 5px;
+    /* Rounded corners */
 }
 
 #hero-image {
-    
+
     margin-bottom: 10px;
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    width: 100vw;
+    /* Full width of the viewport */
+    height: 100vh;
+    /* Full height of the viewport */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Hide any overflow of the image */
-    border-bottom: 50px solid rgb(50, 195, 221); /* Add a 15px solid black border at the bottom */
-    border-top: 50px solid rgb(50, 195, 221); /* Add a 15px solid black border at the top */ ;
+    overflow: hidden;
+    /* Hide any overflow of the image */
+    border-bottom: 50px solid rgb(50, 195, 221);
+    /* Add a 15px solid black border at the bottom */
+    border-top: 50px solid rgb(50, 195, 221);
+    /* Add a 15px solid black border at the top */
+    ;
 }
 
 #hero-image img {
-    width: 100%; /* Ensure the image takes full width of its container */
-    height: 100%; /* Ensure the image takes full height of its container */
-    object-fit: cover; /* Scale the image while preserving its aspect ratio */
+    width: 100%;
+    /* Ensure the image takes full width of its container */
+    height: 100%;
+    /* Ensure the image takes full height of its container */
+    object-fit: cover;
+    /* Scale the image while preserving its aspect ratio */
 }
 
+#description {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(50, 195, 221, 0.6); /* Background color with 40% opacity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+    color: white; /* Font color */
+    text-align: center;
+  }
+  
+  #description p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
 #footer-info {
-   font-family: sans-serif;
-  display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center;     /* Vertically center */
-  height: 100vh;
+
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
+    height: 100vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -134,5 +189,3 @@ header {
         float: none;
     }
 }
-
-
