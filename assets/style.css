@@ -45,7 +45,7 @@ header {
 #call-to-action {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 105%;
+    top: 123%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: larger;
@@ -153,15 +153,15 @@ header {
     /* Scale the image while preserving its aspect ratio */
 }
 
-#description {
-    
+#description{
+    width: 100%;
     border-radius: 2%;
     position:absolute; 
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 600px;
+    max-width: 2000px;
     padding: 40px;
     background-color: rgba(50, 195, 221, 0.93); /* Background color with 40% opacity */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
