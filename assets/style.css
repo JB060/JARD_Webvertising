@@ -1,57 +1,67 @@
+/* Default styles */
+
+/* Header styles */
 header {
     background-color: rgb(255, 255, 255);
-
 }
 
-
-/* Style for the logo container */
 #jard-logo {
     padding: 20px;
-    /* Adjust padding as needed */
 }
 
-/* Style for the logo image */
 #jard-logo img {
     width: 320px;
-    /* Adjust the width of the logo image */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
-/* Change cursor to pointer on hover */
-#jard-logo a:hover {
-    cursor: pointer;
-}
-
-#email {
-    position: absolute;
-    top: 20px;
-    transform: translateX(-50%);
-    left: 50%;
+/* Common styles for both elements */
+#email, #email-svg {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration:solid;
     color: rgb(43, 193, 219);
     font-size: 20px;
-    width: 200px;
     text-align: center;
-    
-}
-
-#email-svg {
     position: absolute;
     top: 20px;
     transform: translateX(-50%);
-    left: 46.5%;
-    color: rgb(43, 193, 219);
-    font-size: 20px;
-    width: 50px;
-    text-align: center;
 }
+
+/* Styles for the email input */
+#email {
+    left: 50%;
+    width: 200px;
+}
+
+/* Styles for the email icon */
+#email-svg {
+    left: 45%;
+    width: 50px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    #email, #email-svg {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-bottom: 30px; /* Add margin between elements */
+    }
+    
+    #email {
+        width: 100%; /* Expand width to fill container */
+    }
+    
+    #email-svg {
+        width: 30%; /* Adjust width for responsiveness */
+        margin: 0 auto; /* Center the element */
+    }
+}
+
 
 #call-to-action {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 123%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: larger;
@@ -61,140 +71,125 @@ header {
     border: solid 2px;
     border-radius: 20px;
     padding: 20px 50px;
-    /* Adjust padding for button size */
-    color: rgb(0, 0, 0); /* Font color */
+    color: rgb(0, 0, 0);
 }
 
-
-.navbar-container {
-    display: flex;
-    align-items: center;
-    /* Center items vertically */
-    justify-content: space-between;
-    /* Space items apart, pushing button to the right */
-    background-color: rgb(255, 255, 255);
-    height: 30px;
-    width: 100%;
-    /* Assuming full width */
-    padding: 0 20px;
-    /* Add padding for space around navbar contents */
-}
-
+/* Navbar styles */
 #navbar {
     text-align: center;
     cursor: pointer;
-    /* Change cursor to pointer on hover */
     transition: opacity 0.1s ease;
-    /* Smooth transition for opacity change */
 }
 
 #navbar:hover {
     opacity: 0.7;
-    /* Reduce opacity to 70% on hover */
 }
 
 #navbar.clicked {
     opacity: 2.5;
-    /* Increase opacity to 150% when clicked */
-}
 }
 
 #buttons {
-
     margin-right: 0%;
     list-style-type: none;
-    padding: 0%
+    padding: 0%;
 }
 
 #buttons li {
     display: inline-block;
-    /* Display list items in a row */
     margin-right: 10px;
-    /* Add spacing between items */
     margin-bottom: 30px;
 }
 
 #buttons li a {
-
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-family: sans-serif;
     background-color: rgb(50, 195, 221);
     text-decoration: none;
-    /* Remove underline from links */
     color: rgb(255, 255, 255);
-    /* Set link color */
     padding: 8px 16px;
-    /* Add padding to each link */
     border: 1px solid black;
-    /* Add border for visual separation */
     border-radius: 5px;
-    /* Rounded corners */
 }
 
+/* Main content styles */
 #hero-image {
-
     margin-bottom: 10px;
     width: 100vw;
-    /* Full width of the viewport */
     height: 100vh;
-    /* Full height of the viewport */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* Hide any overflow of the image */
     border-bottom: 50px solid rgb(50, 195, 221);
-    /* Add a 15px solid black border at the bottom */
     border-top: 50px solid rgb(50, 195, 221);
-    /* Add a 15px solid black border at the top */
-    ;
 }
 
 #hero-image img {
     width: 100%;
-    /* Ensure the image takes full width of its container */
     height: 100%;
-    /* Ensure the image takes full height of its container */
     object-fit: cover;
-    /* Scale the image while preserving its aspect ratio */
 }
 
-#description{
-    width: 100%;
-    border-radius: 2%;
-    position:absolute; 
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#description {
+    position: relative;
     width: 100%;
     max-width: 2000px;
     padding: 40px;
-    background-color: rgba(50, 195, 221, 0.93); /* Background color with 40% opacity */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
-    color: rgba(0, 0, 0, 0.829); /* Font color */
+    background-color: rgba(50, 195, 221, 0.93);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.829);
     text-align: center;
-  }
-  
-  #description p {
+}
+
+#description p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 10px;
-  }
+}
 
+/* Footer styles */
 #footer-info {
-
+    background-color: rgb(41, 232, 232);
     font-family: sans-serif;
     display: flex;
     justify-content: center;
-    /* Horizontally center */
     align-items: center;
-    /* Vertically center */
-    height: 100vh;
+    height: auto;
 }
 
+/* Media queries for responsiveness */
+
+/* Adjustments for smaller screens */
 @media screen and (max-width: 600px) {
     #navbar li {
         float: none;
+    }
+}
+
+/* Responsive adjustments for various screen sizes */
+@media screen and (min-width: 400px) and (max-width: 1200px) {
+    #jard-logo img {
+        width: 220px; /* Adjust logo size for smaller screens */
+    }
+    
+    #email {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+    
+    #call-to-action {
+        padding: 15px 40px; /* Adjust button padding for smaller screens */
+    }
+    
+    #buttons li a {
+        padding: 8px 12px; /* Adjust button padding for smaller screens */
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    /* Additional styles for larger screens (up to 2000px) */
+    #jard-logo img {
+        width: 320px; /* Reset logo size for larger screens */
     }
 }
